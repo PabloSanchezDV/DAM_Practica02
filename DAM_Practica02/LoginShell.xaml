@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DAM_Practica02.LoginShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DAM_Practica02"
+    xmlns:views="clr-namespace:DAM_Practica02.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="DAM_Practica02"
+    BackgroundColor="{DynamicResource Background}"
+    ForegroundColor="{DynamicResource PrimaryDark}">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="Login"/>
+
+</Shell>
