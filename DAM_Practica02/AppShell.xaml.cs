@@ -1,4 +1,6 @@
-﻿namespace DAM_Practica02
+﻿using DAM_Practica02.Views;
+
+namespace DAM_Practica02
 {
     public partial class AppShell : Shell
     {

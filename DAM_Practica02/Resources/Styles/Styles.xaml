@@ -4,6 +4,24 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
+    <Style x:Key="PrimaryTextStyle" TargetType="Label">
+        <Setter Property="FontFamily" Value="{DynamicResource PrimaryFontFamily}" />
+        <Setter Property="FontSize" Value="{DynamicResource PrimaryFontSize}" />
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryDark}" />
+    </Style>
+    
+    <Style x:Key="SecondaryTextStyle" TargetType="Label">
+        <Setter Property="FontFamily" Value="{DynamicResource SecondaryFontFamily}" />
+        <Setter Property="FontSize" Value="{DynamicResource SecondaryFontSize}" />
+        <Setter Property="TextColor" Value="{DynamicResource SecondaryDarkText}" />
+    </Style>
+    
+    <Style x:Key="TertiaryTextStyle" TargetType="Label">
+        <Setter Property="FontFamily" Value="{DynamicResource TertiaryFontFamily}" />
+        <Setter Property="FontSize" Value="{DynamicResource TertiaryFontSize}" />
+        <Setter Property="TextColor" Value="{DynamicResource TertiaryDarkText}" />
+    </Style>
+
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>
@@ -446,6 +464,11 @@
         <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource Magenta}, Dark={StaticResource White}}" />
         <Setter Property="UnselectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
+    </Style>
+
+    <Style TargetType="Label" Class="FlyoutItemLabelStyle">
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryDark}" />
+        <Setter Property="HeightRequest" Value="100" />
     </Style>
 
 </ResourceDictionary>

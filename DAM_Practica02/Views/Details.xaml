@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DAM_Practica02.Views.Details"
+             Title="Details"
+             BackgroundColor="{DynamicResource Background}">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+                Text="{Binding Name}"
+                Style="{DynamicResource PrimaryTextStyle}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+            
+            <Label 
+                Text="{Binding ScientificName}"
+                Style="{DynamicResource SecondaryTextStyle}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Border
+                Stroke="{DynamicResource Background}"
+                StrokeThickness="0"
+                Margin="0,20,0,20"
+                BackgroundColor="{DynamicResource Background}">
+                <Image 
+                    Source="{Binding ImageReference}"
+                    HorizontalOptions="Fill"
+                    Aspect="AspectFill" />
+            </Border>
+
+            <Label 
+                Text="{Binding Description}"
+                Style="{DynamicResource TertiaryTextStyle}"
+                VerticalOptions="Center"
+                HorizontalOptions="Fill"
+                Padding="25"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

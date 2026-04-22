@@ -11,8 +11,10 @@ namespace DAM_Practica02
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("OpenSans-Regular.ttf", "Open Sans");
+                    fonts.AddFont("ARIAL.ttf", "Arial");
+                    fonts.AddFont("times.ttf", "Times New Roman");
+                    fonts.AddFont("cour.ttf", "Courier New");
                 });
 
 #if DEBUG

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DAM_Practica02.Views.LoginPage"
+             Title="LoginPage"
+             BackgroundColor="{DynamicResource Background}">
+    <VerticalStackLayout Spacing="20">
+        <Label 
+            Text="Welcome"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Style="{StaticResource PrimaryTextStyle}"/>
+        <Label 
+            Text="Please Log In"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Style="{StaticResource SecondaryTextStyle}"/>
+        <Label
+            x:Name="ErrorMessage"
+            Text="User and / or password are wrong. Please try again."
+            IsVisible="False" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="#EBA7A7"/>
+        <Label 
+            Text="User"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Style="{StaticResource TertiaryTextStyle}"/>
+        <Entry 
+            x:Name="UserEntry"
+            Placeholder="User Name"
+            TextChanged="OnUserEntryChanged"
+            PlaceholderColor="{StaticResource White}"/>
+        <Label 
+            Text="Password"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Style="{StaticResource TertiaryTextStyle}"/>
+        <Entry 
+            x:Name="PasswordEntry"
+            Placeholder="Password"
+            TextChanged="OnPasswordEntryChanged"
+            PlaceholderColor="{StaticResource White}"
+            IsPassword="True"/>
+        <Button 
+            Text="Sing in"
+            Clicked ="OnLogin" />
+        <Button 
+            Text="Log in with fingerprint"
+            Clicked ="ClickedFingerprint" />
+    </VerticalStackLayout>
+</ContentPage>
